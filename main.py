@@ -1,3 +1,21 @@
+def initialize_rag_chain(args):
+    """Initializes and loads the Bangla RAG Chain."""
+    rag_chain = BanglaRAGChain()
+    rag_chain.load(
+        chat_model_id=args.chat_model,
+        embed_model_id=args.embed_model,
+        text_path=args.text_path,
+        k=args.k,
+        top_k=args.top_k,
+        top_p=args.top_p,
+        temperature=args.temperature,
+        chunk_size=args.chunk_size,
+        chunk_overlap=args.chunk_overlap,
+        hf_token=args.hf_token,
+        max_new_tokens=args.max_new_tokens,
+        quantization=args.quantization,
+    )
+    return rag_chain
 import argparse
 import logging
 from .bdrag_pipeline.py.py import BanglaRAGChain
