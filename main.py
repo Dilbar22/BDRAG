@@ -1,6 +1,6 @@
 import argparse
 import logging
-from ._init_.py import BanglaRAGChain
+from .bdrag_pipeline.py.py import BanglaRAGChain
 import warnings
 
 warnings.filterwarnings("ignore")
