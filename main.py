@@ -102,12 +102,6 @@ def main():
 
     # Parse command-line arguments
     args = parser.parse_args()
-    upload_url = f"https://api.docparser.com/v1/document/upload-url/{snwcghqojell}"
-file_url = "https://app.docparser.com/stack/snwcghqojell/files?file_id=103908284&tab=raw"
-
-response = requests.post(upload_url, json={"url": file_url}, headers={"Authorization": f"Bearer {1a40aaff5ece32aa1158254b8d0e4ec7ba107853}"})
-
-
     # Set up logging
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
