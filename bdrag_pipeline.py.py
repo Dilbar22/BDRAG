@@ -1,5 +1,5 @@
-import os
-import bdrag
+import py
+from .bangla_rag_pipeline import BanglaRAGChain
 from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
