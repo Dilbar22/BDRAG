@@ -16,7 +16,7 @@ Welcome to the **Bangla Retrieval-Augmented Generation (RAG) Pipeline**! This re
 - **RAG Framework:** [Langchain](https://www.langchain.com/)
 - **Chunking:** [Recursive Character Split](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/recursive_text_splitter/)
 - **Vector Store:** [ChromaDB](https://www.trychroma.com/)
-- **Data Ingestion:** Currently supports text (.txt) files only due to the lack of reliable Bengali PDF parsing tools.
+- **Data Ingestion:** supports pdf files.
 
 ## Configurability
 
